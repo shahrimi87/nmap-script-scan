@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nmap Script Scan Report</title>
   <style>
     body {
-      background-color: #000;
+      background-color: #0d0d0d;
+      font-family: 'Courier New', monospace;
+      color: #00ffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #112e42;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
       color: #0ff;
-      font-family: monospace;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 4rem auto;
+      background-color: #1a1a1a;
       padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
     }
-    a {
+
+    .container h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
       color: #0ff;
     }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: transparent;
+      color: #0ff;
+      border: 1px solid #0ff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0ff;
+      color: #000;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    footer {
+      margin-top: 5rem;
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 1.2rem;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Nmap Script Scan</h1>
-  <p>This project performs advanced script scanning using Nmap and generates detailed output logs.</p>
-  <p><a href="report/script-scan.txt" target="">View Scan Report</a></p>
+
+  <header>
+    <h1>Nmap Script Scan Project</h1>
+  </header>
+
+  <div class="container">
+    <h2>Project Summary</h2>
+    <p>This project demonstrates the use of <strong>Nmap scripting engine (NSE)</strong> to perform advanced network scanning and vulnerability assessment.</p>
+    <p>The scan includes service detection and default script scanning to identify potential misconfigurations or exposed services.</p>
+
+    <a href="report/script-scan.txt" class="btn" target="_blank">📄 View Scan Report</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Shahrimi Othman. All rights reserved.
+  </footer>
+
 </body>
 </html>
